@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<title>Challenge Oracle ONE - Semana 1 y 2</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <meta name="description" content="This field contains information about your page. It is usually around two sentences long.">.
+        <meta name="author" content="Edgar Zavaleta"> -->
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+            <h1 class="titulo">Encriptador de texto &#129323</h1>
+            <p>El objetivo de esta página es encriptar o desencriptar textos.</p>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <h2>Manual de uso</h2>
+                <p>Escribe dentro del cuadro izquierdo el texto, posteriormente haz click en la acción que deseas realizar.</p>
+                <h3>Aclaraciones importantes:</h3>
+                <ul>
+                    <li>Solo funciona con letras minúsculas</li>
+                    <li>Las letras no pueden llevar acentos</li>
+                    <li>Solo se permiten estos signos de puntuación: ¿ ? ¡ ! . , : )</li>
+                </ul>
+            </section>
+            <section class="container">
+                <ul id="mensajes-errores"></ul>
+                <form id ="menu-encriptar">
+                    <div class="grupo">
+                        <textarea id="entrada" type="text" name="texto-entrada"    placeholder="Escribe el texto" ></textarea>
+                        <textarea id="salida"   name="texto-salida"     placeholder="Mensaje" readonly = "readonly"></textarea>
+                        <button class="fa fa-clipboard" id="boton-copiar"></button>
+                    </div>
+                    <button type="button" id="boton-encriptar" > Codificar <i class="fa fa-lock" aria-hidden="true"></i> </button> 
+                    <button type="button" id="boton-desencriptar"> Decodificar <i class="fa fa-unlock" aria-hidden="true"></i></button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Elaborado por: Edgar P. Zavaleta Martínez</p>
+            <ul class="social_footer_ul">
+                <li><a href="https://www.facebook.com/edgareslahostia/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/edgarpzm"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/edgareslahostia/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/edgarxpascu"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </footer>
+
+        <!-- Importación de los Javascripts AQUÍ -->
+        <script src="js/main.js"></script>
+		<script src="js/encriptar.js"></script>
+        <script src="js/desencriptar.js"></script>
+    </body> 
+</html>
